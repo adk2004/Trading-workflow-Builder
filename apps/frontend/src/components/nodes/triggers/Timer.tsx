@@ -1,8 +1,6 @@
 import { Handle, Position } from "@xyflow/react";
+import {type TimerData } from "commondata/types"
 
-export type TimerData = {
-    time: number;
-}
 
 export function Timer({data, isConnectable}: {data:{metadata: TimerData},isConnectable: boolean}) {
     return (

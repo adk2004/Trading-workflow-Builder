@@ -1,12 +1,14 @@
 import { useState, useCallback } from 'react';
 import { ReactFlow, applyNodeChanges, applyEdgeChanges, addEdge } from '@xyflow/react';
 import { TriggerSheet } from './TriggerSheet';
-import { PriceTrigger, type PriceTriggerData } from '@/components/nodes/triggers/PriceTrigger';
-import { Timer, type TimerData } from '@/components/nodes/triggers/Timer';
-import { Lighter, type TradingMetadata } from '@/components/nodes/actions/Lighter';
+import { PriceTrigger,} from '@/components/nodes/triggers/PriceTrigger';
+import { Timer, } from '@/components/nodes/triggers/Timer';
+import { Lighter,} from '@/components/nodes/actions/Lighter';
 import { ActionSheet } from './ActionSheet';
 import { HyperLiquid } from '@/components/nodes/actions/HyperLiquid';
 import { Backpack } from '@/components/nodes/actions/Backpack';
+import type { PriceTriggerData, TimerData, TradingMetadata } from 'commondata/types';
+
 
 export type NodeKind = "priceTrigger" | "timeTrigger" | "hyperliquid" | "backpack" | "lighter" | "email" ;
 export type NodeMetaData = PriceTriggerData | TimerData | TradingMetadata

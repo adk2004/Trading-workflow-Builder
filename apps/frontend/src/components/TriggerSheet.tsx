@@ -17,10 +17,10 @@ import {
 import type { NodeKind } from "./CreateWorkflow"
 import { SelectGroup,} from "@radix-ui/react-select";
 import { useState } from "react";
-import type { PriceTriggerData } from "@/components/nodes/triggers/PriceTrigger";
-import type { TimerData } from "@/components/nodes/triggers/Timer";
+import type { PriceTriggerData } from "commondata/types";
+import type { TimerData } from "commondata/types";
 import { Input } from "./ui/input";
-import { SUPPORTED_ASSETS } from "@/commonExports";
+import { SUPPORTED_ASSETS } from "commondata/types";
 
 
 const SUPPORTED_TRIGGERS =[

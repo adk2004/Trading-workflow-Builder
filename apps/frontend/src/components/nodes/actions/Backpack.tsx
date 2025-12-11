@@ -1,5 +1,5 @@
 import { Handle, Position } from "@xyflow/react"
-import type { TradingMetadata } from "./Lighter"
+import type { TradingMetadata } from "commondata/types"
 
 export function Backpack({data}: {
     data: {

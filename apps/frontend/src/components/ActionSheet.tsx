@@ -19,8 +19,8 @@ import type { NodeKind } from "./CreateWorkflow"
 import { SelectGroup,} from "@radix-ui/react-select";
 import { useRef, useState } from "react";
 import { Input } from "./ui/input";
-import { SUPPORTED_ASSETS } from "@/commonExports";
-import type { TradingMetadata } from "@/components/nodes/actions/Lighter";
+import { SUPPORTED_ASSETS, type TradingMetadata } from "commondata/types";
+
 
 
 const SUPPORTED_ACTIONS =[
